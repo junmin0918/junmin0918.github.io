@@ -7,23 +7,48 @@
         h1{font-family: Arial, sans-serif;
            font-size: 40px;
            text-align: center;
-           border: 2px solid;
+           border: 2px dashed;
            border-radius: 20px;
            border-color:rgb(67, 67, 88);
            width: fit-content;
            margin :auto;
            padding: 5px 10px;}
         h1:hover { color: rgba(155, 82, 189, 0.4);}
+
         .question{color:rgb(66, 56, 98);}
         .question{font-size:large;} 
-        .question{font-weight:bold;} 
+        .question{font-weight:bolder;} 
         .question{font-family:Georgia, serif;}
+
         body{background:linear-gradient(135deg, rgb(244, 247, 251),rgb(170, 210, 250));}
         hr{border: none;border-top: 2px solid rgb(126, 37, 235);}
+
         .answer{font-size: 16px;
           font-weight: bold;
-          font-family: Trebuchet MS, sans-serif}
-        h4{text-align: right;font-size: 10px;}
+          font-family: Trebuchet MS, sans-serif;}
+          .answer:hover {transform: scale(1.05); transition: transform 0.5s ease-in-out;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);}
+
+        .question-box {border: 2px solid rgb(23, 63, 95);
+          border-radius: 15px;
+          padding: 15px;
+          margin: 20px;}
+        .question-box summary {cursor: pointer;}
+        .question-box .answer {padding: 15px;
+            margin-top: 15px;
+            background-color: rgba(255, 255, 255, 0.6);
+            border-radius: 20px;}
+
+        .click-text {display: block;
+            font-size: 15px;
+            font-weight: bold;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 12px;
+            cursor: pointer;}
+        .click-text:hover { color: rgba(110, 17, 153, 0.4);}
+        
+        h4{text-align: right;font-size: 15px;}
     </style>
     <title>ASSIGNMENT</title>
 </head>
@@ -31,45 +56,99 @@
     
     <h1>Assignment 1 <img src="favicon.png"><img src="favicon computer.png"></h1>
     <hr>
-    
-    <h3 class="question">1) What was the first thing you paid attention to when interacting with the experience?</h3>
-    <p class="answer"> My immediate focus was drawn to the animated architectural line drawings layered with bold title typography and background classical music.</p>
-    
-    <h3 class="question">2) Spend two minutes with the experience and create a list of each of your discrete actions.</h3>
+   
+
+    <details class="question-box">
+    <summary class="question">1) What was the first thing you paid attention to when interacting with the experience?
+    <span class="click-text">“Click to see my answer”</span>
+    </summary>
+    <p class="answer"> My first focus was drawn to the animated architectural line drawings layered with bold title typography and background classical music.</p>
+    </details>
+
+    <details class="question-box">
+    <summary class="question">2) Spend two minutes with the experience and create a list of each of your discrete actions.
+    <span class="click-text">“Click to see my answer”</span>
+    </summary>
     <p class="answer"> I enabled audio, scrolled down to view the opening story, opened Chapter I via the menu, rotated the 3D interior model, clicked "Read More" for details, played an audio clip, adjusted the volume, and scrolled back to top.</p>
+    </details>
 
-    <h3 class="question">3) What part of the experience did you spend the most time engaging with?</h3>
+    <details class="question-box">
+    <summary class="question">3) What part of the experience did you spend the most time engaging with?
+    <span class="click-text">“Click to see my answer”</span>
+    </summary>
     <p class="answer"> I spent the most time manipulating the interactive 3D model, which allowed detailed spatial exploration of Gehry's design from multiple angles.</p>
+    </details>
 
-    <h3 class="question">4) What was the most common action in your two minute interaction with the experience?</h3>
-    <p class="answer"> The most common action was rotating the 3D model to view it from different angles.</p>
+    <details class="question-box">
+    <summary class="question">4) What was the most common action in your two minute interaction with the experience?
+    <span class="click-text">“Click to see my answer”</span>
+    </summary>
+    <p class="answer">Vertical scrolling was the primary input, used continuously to advance through narrative sections and trigger multimedia elements.</p>
+    </details>
 
-    <h3 class="question">5) What is your impression of the intended primary goal of the interactive experience?</h3>
+    <details class="question-box">
+    <summary class="question">5) What is your impression of the intended primary goal of the interactive experience?
+    <span class="click-text">“Click to see my answer”</span>
+    </summary>
     <p class="answer"> The goal is to act as a digital archive exhibition that makes complex architectural design history accessible through interactive storytelling.</p>
+    </details>
 
-    <h3 class="question">6) How does the interactive experience communicate this primary goal?</h3>
-    <p class="answer"> The experience communicates its goal through immersive storytelling, allowing users to explore architectural designs in an engaging and educational manner.</p>
+    <details class="question-box">
+    <summary class="question">6) How does the interactive experience communicate this primary goal?
+    <span class="click-text">“Click to see my answer”</span>
+    </summary>
+    <p class="answer">  It uses a chapter-based documentary format, combining raw interviews, archival sketches, photos, and music to guide users chronologically.</p>
+    </details>
+    
+    <details class="question-box">
+    <summary class="question">7) What is your impression of how the experience should be interacted with over time? (For how long and how many different times)
+    <span class="click-text">“Click to see my answer”</span>
+    </summary>
+    <p class="answer"> It is designed for a single 15-minute deep session, but functions as a lasting reference archive for repeated visits.</p>
+    </details>
 
-    <h3 class="question">7) What is your impression of how the experience should be interacted with over time? (For how long and how many different times)</h3>
-    <p class="answer"> The experience should be interacted with over time as a learning tool, allowing users to revisit and explore different aspects of the architectural designs at their own pace.</p>
+    <details class="question-box">
+    <summary class="question">8) How does the interactive experience communicate how it should be interacted with over time?
+    <span class="click-text">“Click to see my answer”</span>
+    </summary>
+    <p class="answer"> The clear progress bar suggests a linear flow, while the permanent index button encourages non-linear visits to specific artifacts.</p>
+    </details>
 
-    <h3 class="question">8) How does the interactive experience communicate how it should be interacted with over time?</h3>
-    <p class="answer"> The experience communicates this through its design and navigation, encouraging users to explore at their own pace and return for further engagement.</p>
+    <details class="question-box">
+    <summary class="question">9) What other media forms (digital or otherwise) does the experience reference?
+    <span class="click-text">“Click to see my answer”</span>
+    </summary>
+    <p class="answer">The site heavily references documentary films, classical orchestra albums, physical gallery catalogs, and 3D modeling software.</p>
+    </details>
 
-    <h3 class="question">9) What other media forms (digital or otherwise) does the experience reference?</h3>
-    <p class="answer"> The experience references architectural drawings, historical photographs, and audio recordings.</p>
-
-    <h3 class="question">10) What does this reference/s communicate to you about how you should act when engaging with your research experience?</h3>
+    <details class="question-box">
+    <summary class="question">10) What does this reference/s communicate to you about how you should act when engaging with your research experience?
+    <span class="click-text">“Click to see my answer”</span>
+    </summary>
     <p class="answer"> The references suggest a need for careful observation and active engagement with the material.</p>
+    </details>
 
-    <h3 class="question">11) What does this reference/s communicate to you about how you should feel when engaging with your research experience?</h3>
+    <details class="question-box">
+    <summary class="question">11) What does this reference/s communicate to you about how you should feel when engaging with your research experience?
+    <span class="click-text">“Click to see my answer”</span>
+    </summary>
     <p class="answer"> The references evoke a sense of curiosity and appreciation for the complexity of architectural design.</p>
+    </details>
 
-    <h3 class="question">12) What is the most frustrating part of the interaction to you and what makes that part frustrating?</h3>
+    <details class="question-box">
+    <summary class="question">12) What is the most frustrating part of the interaction to you and what makes that part frustrating?
+    <span class="click-text">“Click to see my answer”</span>
+    </summary>
     <p class="answer"> Smooth-scrolling animations sometimes created minor delay when trying to jump back or navigate text quickly.</p>
+    </details>
 
-    <h3 class="question">13) What is the most satisfying part of the interaction to you and what makes that part satisfying?</h3>
+    <details class="question-box">
+    <summary class="question">13) What is the most satisfying part of the interaction to you and what makes that part satisfying?
+    <span class="click-text">“Click to see my answer”</span>
+    </summary>
     <p class="answer"> Rotating the 3D model while listening to Gehry's vocal narration created an immediate, tactile connection to the architecture.</p>
+    </details>
+
     <hr>
     <h2>Link for Interactive Web Project <img src="favicon link.png"> <img src="favicon pin.png">  https://gehry.getty.edu/</h2>
     <h4>Done by: [JUN MIN]</h4>
