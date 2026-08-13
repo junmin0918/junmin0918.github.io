@@ -25,7 +25,7 @@
 
         .answer{font-size: 16px;
           font-weight: bold;
-          font-family: Trebuchet MS, sans-serif;}
+          font-family: Trebuchet , sans-serif;}
           .answer:hover {transform: scale(1.05); transition: transform 0.5s ease-in-out;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);}
 
@@ -48,6 +48,41 @@
             cursor: pointer;}
         .click-text:hover { color: rgba(110, 17, 153, 0.4);}
         
+        .progress-area {text-align: right;
+            margin-top: 10px;
+            margin-right: 30px;
+            margin-bottom: 20px;}
+        .progress-text {text-align: right;
+            font-size: 18px;
+            font-weight:bold;
+            font-family: Trebuchet , sans-serif;
+            margin-bottom: 5px;}
+        .progress-container {width: 160px;
+            height: 20px;
+            background-color: white;
+            border: 2px solid rgb(23, 63, 95);
+            border-radius: 12px;
+            margin: 1px 0 25px auto;}
+        .progress-bar {width: 0%;
+            height: 100%;
+            background-color: rgb(124, 66, 195);
+            border-radius: 10px;
+            transition: width 0.4s ease;}
+        
+        body:has(.q1[open]) .progress-bar {width: 7.69%;}
+        body:has(.q2[open]) .progress-bar {width: 15.38%;}
+        body:has(.q3[open]) .progress-bar {width: 23.08%;}
+        body:has(.q4[open]) .progress-bar {width: 30.77%;}
+        body:has(.q5[open]) .progress-bar {width: 38.46%;}
+        body:has(.q6[open]) .progress-bar {width: 46.15%;}
+        body:has(.q7[open]) .progress-bar { width: 53.85%;}
+        body:has(.q8[open]) .progress-bar {width: 61.54%;}
+        body:has(.q9[open]) .progress-bar { width: 69.23%;}
+        body:has(.q10[open]) .progress-bar {width: 76.92%;}
+        body:has(.q11[open]) .progress-bar {width: 84.62%;}
+        body:has(.q12[open]) .progress-bar {width: 92.31%;}
+        body:has(.q13[open]) .progress-bar {width: 100%;}
+        
         h4{text-align: right;font-size: 15px;}
     </style>
     <title>ASSIGNMENT</title>
@@ -56,93 +91,97 @@
     
     <h1>Assignment 1 <img src="favicon.png"><img src="favicon computer.png"></h1>
     <hr>
-   
+    <p class="progress-text">Questions Progress</p>
 
-    <details class="question-box">
+    <div class="progress-container">
+    <div class="progress-bar"></div>
+    </div>
+
+    <details class="question-box q1">
     <summary class="question">1) What was the first thing you paid attention to when interacting with the experience?
     <span class="click-text">“Click to see my answer”</span>
     </summary>
     <p class="answer"> My first focus was drawn to the animated architectural line drawings layered with bold title typography and background classical music.</p>
     </details>
 
-    <details class="question-box">
+    <details class="question-box q2">
     <summary class="question">2) Spend two minutes with the experience and create a list of each of your discrete actions.
     <span class="click-text">“Click to see my answer”</span>
     </summary>
     <p class="answer"> I enabled audio, scrolled down to view the opening story, opened Chapter I via the menu, rotated the 3D interior model, clicked "Read More" for details, played an audio clip, adjusted the volume, and scrolled back to top.</p>
     </details>
 
-    <details class="question-box">
+    <details class="question-box q3">
     <summary class="question">3) What part of the experience did you spend the most time engaging with?
     <span class="click-text">“Click to see my answer”</span>
     </summary>
     <p class="answer"> I spent the most time manipulating the interactive 3D model, which allowed detailed spatial exploration of Gehry's design from multiple angles.</p>
     </details>
 
-    <details class="question-box">
+    <details class="question-box q4">
     <summary class="question">4) What was the most common action in your two minute interaction with the experience?
     <span class="click-text">“Click to see my answer”</span>
     </summary>
     <p class="answer">Vertical scrolling was the primary input, used continuously to advance through narrative sections and trigger multimedia elements.</p>
     </details>
 
-    <details class="question-box">
+    <details class="question-box q5">
     <summary class="question">5) What is your impression of the intended primary goal of the interactive experience?
     <span class="click-text">“Click to see my answer”</span>
     </summary>
     <p class="answer"> The goal is to act as a digital archive exhibition that makes complex architectural design history accessible through interactive storytelling.</p>
     </details>
 
-    <details class="question-box">
+    <details class="question-box q6">
     <summary class="question">6) How does the interactive experience communicate this primary goal?
     <span class="click-text">“Click to see my answer”</span>
     </summary>
     <p class="answer">  It uses a chapter-based documentary format, combining raw interviews, archival sketches, photos, and music to guide users chronologically.</p>
     </details>
     
-    <details class="question-box">
+    <details class="question-box q7">
     <summary class="question">7) What is your impression of how the experience should be interacted with over time? (For how long and how many different times)
     <span class="click-text">“Click to see my answer”</span>
     </summary>
     <p class="answer"> It is designed for a single 15-minute deep session, but functions as a lasting reference archive for repeated visits.</p>
     </details>
 
-    <details class="question-box">
+    <details class="question-box q8">
     <summary class="question">8) How does the interactive experience communicate how it should be interacted with over time?
     <span class="click-text">“Click to see my answer”</span>
     </summary>
     <p class="answer"> The clear progress bar suggests a linear flow, while the permanent index button encourages non-linear visits to specific artifacts.</p>
     </details>
 
-    <details class="question-box">
+    <details class="question-box q9">
     <summary class="question">9) What other media forms (digital or otherwise) does the experience reference?
     <span class="click-text">“Click to see my answer”</span>
     </summary>
     <p class="answer">The site heavily references documentary films, classical orchestra albums, physical gallery catalogs, and 3D modeling software.</p>
     </details>
 
-    <details class="question-box">
+    <details class="question-box q10">
     <summary class="question">10) What does this reference/s communicate to you about how you should act when engaging with your research experience?
     <span class="click-text">“Click to see my answer”</span>
     </summary>
     <p class="answer"> The references suggest a need for careful observation and active engagement with the material.</p>
     </details>
 
-    <details class="question-box">
+    <details class="question-box q11">
     <summary class="question">11) What does this reference/s communicate to you about how you should feel when engaging with your research experience?
     <span class="click-text">“Click to see my answer”</span>
     </summary>
     <p class="answer"> The references evoke a sense of curiosity and appreciation for the complexity of architectural design.</p>
     </details>
 
-    <details class="question-box">
+    <details class="question-box q12">
     <summary class="question">12) What is the most frustrating part of the interaction to you and what makes that part frustrating?
     <span class="click-text">“Click to see my answer”</span>
     </summary>
     <p class="answer"> Smooth-scrolling animations sometimes created minor delay when trying to jump back or navigate text quickly.</p>
     </details>
 
-    <details class="question-box">
+    <details class="question-box q13">
     <summary class="question">13) What is the most satisfying part of the interaction to you and what makes that part satisfying?
     <span class="click-text">“Click to see my answer”</span>
     </summary>
