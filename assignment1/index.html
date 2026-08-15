@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+ /*   
+The heading I use Arial because it is a simple and easy-to-read sans-serif font.
+I use a large 40px size and centered the heading stand out from the overall words and be easily noticeable.
+The dashed border and rounded corners give the heading a more designed appearance instead of leaving it as plain text.
+The width of the heading is set to fit-content, it will adjust to the size of the text and I added some padding to create space between the text and the border. 
+I added a hover effect that changes the color of the heading to a lighter shade of purple when the user hovers over it, to make it look more interactive.
+
+*/
         h1{font-family: Arial, sans-serif;
            font-size: 40px;
            text-align: center;
@@ -14,31 +22,80 @@
            margin :auto;
            padding: 5px 10px;}
         h1:hover { color: rgba(155, 82, 189, 0.4);}
+/*
 
+I used Georgia for the questions (words) to create a visual contrast with the sans-serif heading and answer text to make it looks different. 
+The darker purple colour helps the questions stand out from the light background and makes them easier to identify as the main content of each section.
+
+*/
         .question{color:rgb(66, 56, 98);}
         .question{font-size:large;} 
         .question{font-weight:bolder;} 
         .question{font-family:Georgia, serif;}
+/*
 
+The background I uses a light blue gradient instead of a single flat colour because I dont want to let the background looks boring.
+I choose this colour combination because it creates a softer and more comfortable visual environment while still giving the page some depth. 
+The light background also provides enough contrast for the dark text and borders.
+
+*/
         body{background:linear-gradient(135deg, rgb(244, 247, 251),rgb(170, 210, 250));}
-        hr{border: none;border-top: 2px solid rgb(126, 37, 235);}
+/*
 
+The purple horizontal line separates the page heading from the question content.
+So, the users know that the content below is starts to be the question and answer part.
+The purple colour that I used is because I love purple and I think it match the background could let the users fell comfortable.
+
+*/
+
+        hr{border: none;border-top: 2px solid rgb(126, 37, 235);}
+/*
+
+The answers use Trebuchet MS and bold text to make the response easy to read and has differences from the questions. 
+The slightly larger text weight helps users to distinguish the answer from the surrounding interface.
+
+*/
         .answer{font-size: 16px;
           font-weight: bold;
           font-family: Trebuchet , sans-serif;}
-          .answer:hover {transform: scale(1.05); transition: transform 0.5s ease-in-out;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);}
+/*
 
+The answer has a hover animation to make the page feel more interactive. 
+The scale effect gives users visual feedback when they move over an answer and the transition keeps the movement smooth .
+A shadow is added to make the answer feel slightly raised out from the background.
+
+*/        
+        .answer:hover {transform: scale(1.05); transition: transform 0.5s ease-in-out;
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);}
+/*
+
+I uses a bordered box to clearly separate each question.
+Rounded corners make the interface feel softer and match the rounded heading and answer elements.
+Padding and margin are used to create enough space so that the page does not feel overcrowded.
+
+*/
         .question-box {border: 2px solid rgb(23, 63, 95);
           border-radius: 15px;
           padding: 15px;
           margin: 20px;}
+/*
+
+The pointer cursor is used on the question summary to communicate that the section can be interacted with.
+The answer is given separate spacing, a semi-transparent background and rounded corners so that it is visually separated from the question while still fitting within the same area.
+
+*/
         .question-box summary {cursor: pointer;}
         .question-box .answer {padding: 15px;
             margin-top: 15px;
             background-color: rgba(255, 255, 255, 0.6);
             border-radius: 20px;}
+/*
 
+The click text uses bold and centred to make the interaction clear.
+The progress bar gives users a simple visual indication of their progress through the questions. 
+I use purple for the bar to match other interactive elements.
+
+*/
         .click-text {display: block;
             font-size: 15px;
             font-weight: bold;
@@ -68,7 +125,8 @@
             background-color: rgb(124, 66, 195);
             border-radius: 10px;
             transition: width 0.4s ease;}
-        
+
+/* The progress bar changes when each answer is opened, to show the user's about the progress. */        
         body:has(.q1[open]) .progress-bar {width: 7.69%;}
         body:has(.q2[open]) .progress-bar {width: 15.38%;}
         body:has(.q3[open]) .progress-bar {width: 23.08%;}
