@@ -12,6 +12,9 @@ Users can click on each question to reveal my answers. The page also uses scroll
 - HTML
 - CSS
 
+## GitHub Repository
+https://github.com/junmin0918/junmin0918.github.io
+
 ## Live Website
 https://junmin0918.github.io/
 
